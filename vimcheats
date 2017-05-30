@@ -1,4 +1,5 @@
 if ctrl z pressed, press fg Enter to go back to vim.
+
 NAVIGATION:------------------------------------------------------
 h          -left
 j          -down
