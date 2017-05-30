@@ -1,0 +1,301 @@
+if ctrl z pressed, press fg Enter to go back to vim.
+NAVIGATION:------------------------------------------------------
+h          -left
+j          -down
+k          -right
+l          -left
+b          -move backward to the beginning of the word
+$          -end
+0          -home
+^          -move to the first non-blank character of the line
+)          -jump forward one sentence
+(          -jump backward one paragraph
+{          -jump forward one paragraph
+}          -jump backward one paragraph
+H          -jump to the top of the screen
+1G         -jump to the beginning of the file (same as gg)
+50G        -jump to line 50
+'m         -jump to the the beginning of the line of mark m
+`m         -jump to the cursor position of mark m
+"          -return to the line where the cursor was before the latest jump(two
+single qoutes)
+``                                                                 - return to the cursor position before the latest jump (undo the
+jump)(two back ticks. this is above the Tab key on some keyboards)
+%                                                                  - jump to the corresponding item, e.g. from an open brace to its
+%          matching closing brace.
+arrows                                                             - moving lines
+o                                                                  - inserting newlines below
+O                                                                  - inserting newlines above
+ctrly                                                              - scroll up
+ctrle                                                              - scroll down
+gg                                                                 - back to top
+G                                                                  - jump to the end of the file
+
+10<PageUp> 10<CTRL-B>     -move 10 pages up
+10<PageDown> 5<CTRL-F>    -move 5 pages down
+
+
+
+
+a          -type appended text
+g+t        -change active tab
+tabnew     -new tab
+esc        -place to normal mode
+:vsp       -vertical split
+:sp        -split
+
+
+SAVING:
+w          -save
+wq         -quit and save
+wq!         -quit and disregard changes
+
+DELETING:--------------------------------------------------------
+d          -delete
+dd         -deleting the entire row
+d$         -deleting from cursor at the end of the line
+dw         -deleting upto the end of the word including spaces
+de         -deleting upto the end of the current word
+x          -deleting character
+
+FORMATTING:-------------------------------------------------------------------------------------------------------------------------
+
+set spell  -----------------  checking all uncorrect words.
+set nospell ------------------------ setting to no spell. 
+z= --------------------------------- go to word to correct then type z= to view the all uncorrect words.
+
+gaip + character to be align
+v                                                                                - highlight
+i                                                                                - insert text
+shift+>                                                                          - tab
+u                                                                                - undo
+ctrl r                                                                           - redo
+higlight the word then press control n until all words are selected then press s - edit same word in one time
+:Tab /word                                                                       - tabularize(after typing :Tab /word press enter
+ga character																	 - highlight the word first before pressing ga
+SEARCHING:
+\p                                                   - searching files
+m                                                    - Add, edit, Delete,Copy files
+:sort                                                - sorting
+highlight the word then ctrl n  then press s to edit - multiple editing.
+highlight the word then shift+S+" or '               - wrap text with single/double qoute
+c+s then press double/sing qoute                     - changing wrapper
+--------------------------------------------------------------------------------------------------------------------------------------
+:grep "wordtosearch" -r ./sourceDirectoryToBeSearch     - searching file
+:cw                                                  - (view the results)sorting the searched files
+----------------------------------------------------------------------------------------------------
+di input character                                   - deleting inside
+gaip + character                                     - aligning with specific character //disregard + sign
+ga ctrl x + character                                - custom aligning // disregard + sign
+
+COPY & PASTING:-------------------------------------------------------------------------------------------
+v          -highlight
+"+y        -copy to system clipboard
+"+p        -paste from system clipboard
+yyp        -copy current line in cursor
+
+BASIC COPY PASTING:------------------------------------------------
+y          -copy
+p          -paste
+:e filename-search the .file
+|p search file
+
+MULTIPLE COPY AND PASTING:-----------------------------------------
+"<register(anyLetter)> y    -copy to register
+"<register(choosenLetter)>  -paste from register
+
+EDITING & DELETING:
+
+ci" or ()       ----- copy inside closing characters like ", () , [], {}
+vi" or ()       ----- vision inside closing characters like ", () , [], {}
+di" or ()       -----  delete inside closing characters like ", () , [], {}
+
+
+NERD:--------------------------------------------------------------
+\n            - open & close sidebar
+\p            - search file
+/nameOfFile   - search word
+ctrl h or l   - move from edit field to dir
+s             - open file in new tab
+/wordToSearch - to search a word
+n             - move all thru words downward
+N             - move all thru words upward
+noh           - exit from search mode
+T             - open in new tab
+gt            - next tab
+gT            - previous tab
+s             - open file horizontally
+i             - opent file vertically
+ctrl+w then no. of spaces then shift < or > - widening nerd
+
+WINDOW ADJUSTMENT:
+
+ctrl w < or > - adjust split window
+:vsp          - split window horizontally
+:sp           - split window vertically
+
+TAGS:---------------------------------------------------------------
+type html tags then press ctrlY,
+ex:
+<html>sample tag</html>
+tag.className*5 ctrly,                   - multiple tags
+ctrl//                                   - to comment
+tag.nameOfTheClass then press ctrlYcomma
+:set tw=999                              - removing vertical limitation
+vat                                      - highlighting divs
+
+MANIPULATING FILES:
+:new filename.txt
+m   - adding,deleting,copying
+
+GIT COMMANDS:
+diff         - viewing changes.
+-- .         -remove all changes
+
+FEATURES:
+hi Normal ctermbg=none       -set background to transparent
+
+git rebase -i root branchname
+
+: 1469699611:0;ls -la
+: 1469699613:0;cd ..
+: 1469699616:0;ls -la
+: 1469699628:0;rm -rf jqueryLearning
+: 1469699630:0;ls -la
+: 1469699640:0;vim ~/.ssh/config
+: 1469699664:0;cat ~/.ssh/id_rsa.pub
+: 1469699722:0;ls -la
+: 1469699729:0;git clone git@github.com:Ninja-Janin/jqueryLearning.git
+: 1469699740:0;ls -la
+: 1469699743:0;cd jqueryLearning
+: 1469699744:0;ls -la
+: 1469699751:0;git config user.name
+: 1469699756:0;git config user.email
+: 1469699776:0;git config user.email "lukemags07@gmail.com"
+: 1469699778:0;git config user.email
+: 1469699780:0;ls -la
+: 1469699784:0;vim README.md
+: 1469699799:0;git add .
+: 1469699825:0;git commit -m "Magic commit with new user.email value"
+: 1469699827:0;gitk
+: 1469699848:0;git log
+: 1469699863:0;git config user.email
+: 1469699871:0;cd Projects/neo.auditions.com
+: 1469699876:0;git config user.email
+: 1469699900:0;ls -la .git/config
+: 1469699906:0;vim .git/config
+: 1469699925:0;vim ~/.gitconfig
+: 1469699948:0;git config user.name
+: 1469699960:0;git config user.name "Ninja Janin"
+: 1469699965:0;git config user.name
+: 1469699974:0;git config --global user.name
+: 1469699980:0;git config user.name
+: 1469699986:0;git config --global user.email
+: 1469699992:0;git config user.email
+: 1469700016:0;gitk
+: 1469700046:0;git rebase -i HEAD~3
+: 1469700051:0;git rebase -i HEAD~2
+: 1469700089:0;gitk
+: 1469700128:0;git rebase -i --root master
+: 1469700145:0;gitk
+: 1469700174:0;git push -f origin master
+: 1469700234:0;git checkout development
+: 1469700235:0;gitk
+: 1469700260:0;git checkout master
+: 1469700262:0;git merge development
+: 1469700264:0;git status
+: 1469700273:0;vi README.md
+: 1469700290:0;vi jqueryLearning.html
+: 1469700315:0;git status
+: 1469700317:0;git add .
+: 1469700319:0;git commit
+: 1469700326:0;git rebase -i --root master
+: 1469700352:0;git status
+: 1469700359:0;vi README.md
+: 1469700369:0;git rebase --continue
+: 1469700372:0;git status
+: 1469700373:0;git add .
+: 1469700377:0;git rebase --continue
+: 1469700379:0;git status
+: 1469700387:0;vi README.md
+: 1469700395:0;git add .
+: 1469700398:0;git rebase --continue
+: 1469700418:0;gitk
+: 1469700445:0;git checkout development
+: 1469700453:0;git reset --hard master
+: 1469700455:0;git status
+: 1469700456:0;git fetch
+: 1469700470:0;git push -f origin development
+: 1469700596:0;vim ~/.zsh_history
+
+
+: 1469699611:0;ls -la
+: 1469699613:0;cd ..
+: 1469699616:0;ls -la
+: 1469699628:0;rm -rf jqueryLearning
+: 1469699630:0;ls -la
+: 1469699640:0;vim ~/.ssh/config
+: 1469699664:0;cat ~/.ssh/id_rsa.pub
+: 1469699722:0;ls -la
+: 1469699729:0;git clone git@github.com:Ninja-Janin/jqueryLearning.git
+: 1469699740:0;ls -la
+: 1469699743:0;cd jqueryLearning
+: 1469699744:0;ls -la
+: 1469699751:0;git config user.name
+: 1469699756:0;git config user.email
+: 1469699776:0;git config user.email "lukemags07@gmail.com"
+: 1469699778:0;git config user.email
+: 1469699780:0;ls -la
+: 1469699784:0;vim README.md
+: 1469699799:0;git add .
+: 1469699825:0;git commit -m "Magic commit with new user.email value"
+: 1469699827:0;gitk
+: 1469699848:0;git log
+: 1469699863:0;git config user.email
+: 1469699871:0;cd Projects/neo.auditions.com
+: 1469699876:0;git config user.email
+: 1469699900:0;ls -la .git/config
+: 1469699906:0;vim .git/config
+: 1469699925:0;vim ~/.gitconfig
+: 1469699948:0;git config user.name
+: 1469699960:0;git config user.name "Ninja Janin"
+: 1469699965:0;git config user.name
+: 1469699974:0;git config --global user.name
+: 1469699980:0;git config user.name
+: 1469699986:0;git config --global user.email
+: 1469699992:0;git config user.email
+: 1469700016:0;gitk
+: 1469700046:0;git rebase -i HEAD~3
+: 1469700051:0;git rebase -i HEAD~2
+: 1469700089:0;gitk
+: 1469700128:0;git rebase -i --root master
+: 1469700145:0;gitk
+: 1469700174:0;git push -f origin master
+: 1469700234:0;git checkout development
+: 1469700235:0;gitk
+: 1469700260:0;git checkout master
+: 1469700262:0;git merge development
+: 1469700264:0;git status
+: 1469700273:0;vi README.md
+: 1469700290:0;vi jqueryLearning.html
+: 1469700315:0;git status
+: 1469700317:0;git add .
+: 1469700319:0;git commit
+: 1469700326:0;git rebase -i --root master
+: 1469700352:0;git status
+: 1469700359:0;vi README.md
+: 1469700369:0;git rebase --continue
+: 1469700372:0;git status
+: 1469700373:0;git add .
+: 1469700377:0;git rebase --continue
+: 1469700379:0;git status
+: 1469700387:0;vi README.md
+: 1469700395:0;git add .
+: 1469700398:0;git rebase --continue
+: 1469700418:0;gitk
+: 1469700445:0;git checkout development
+: 1469700453:0;git reset --hard master
+: 1469700455:0;git status
+: 1469700456:0;git fetch
+: 1469700470:0;git push -f origin development
+: 1469700596:0;vim ~/.zsh_history
