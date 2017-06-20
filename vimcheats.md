@@ -158,7 +158,6 @@ if ctrl z pressed, press fg Enter to go back to vim.
 
 * :new filename.txt
 * m   - adding,deleting,copying
-* 
 
 ## GIT COMMANDS:
 
