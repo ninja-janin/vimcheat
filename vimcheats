@@ -108,7 +108,7 @@ MULTIPLE COPY AND PASTING:-----------------------------------------
 EDITING & DELETING:
 
 ci" or ()       ----- copy inside closing characters like ", () , [], {}
-vi" or ()       ----- vision inside closing characters like ", () , [], {}
+vi" or ()       ----- visual inside closing characters like ", () , [], {}
 di" or ()       -----  delete inside closing characters like ", () , [], {}
 
 
