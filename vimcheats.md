@@ -32,10 +32,6 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * ctrle  - scroll down
 * gg     - back to top
 * G      - jump to the end of the file
-
-* 10<PageUp> 10<CTRL-B>     -move 10 pages up
-* 10<PageDown> 5<CTRL-F>    -move 5 pages down
-* 
 * a          -type appended text
 * g+t        -change active tab
 * tabnew     -new tab
@@ -63,10 +59,9 @@ if ctrl z pressed, press fg Enter to go back to vim.
 
 ## FORMATTING
 
-* set spell  -----------------  checking all uncorrect words.
-* set nospell ------------------------ setting to no spell. 
-* z= --------------------------------- go to word to correct then type z= to view the all uncorrect words.
-* 
+* set spell   - checking all uncorrect words.
+* set nospell - setting to no spell.
+* z=          - go to word to correct then type z= to view the all uncorrect words.
 * ga character                                                                     - highlight the word first before pressing ga
 * gaip + character                                                                 - aligning with specific character //disregard + sign
 * ga ctrl x + character                                                            - custom aligning // disregard + sign
@@ -104,12 +99,12 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * p           - paste
 * :e filename - search the .file
 * |p          - search file
-* yyp         - instant copy
+* yyp         - instant copy the line
 
 ## MULTIPLE COPY AND PASTING
 
-* "<register(anyLetter)> y    -copy to register
-* "<register(choosenLetter)>  -paste from register
+* "register(anyLetter) y   - copy to register
+* "register(choosenLetter) - paste from register
 
 ## EDITING & DELETING
 
@@ -149,8 +144,10 @@ if ctrl z pressed, press fg Enter to go back to vim.
 ## TAGS
 
 * type html tags then press ctrlY,
-* ex:
-* <html>sample tag</html>
+
+# ex:
+
+* `<html>sample tag</html>`
 * tag.className*5 ctrly,                   - multiple tags
 * highlight then gc                        - to comment
 * tag.nameOfTheClass then press ctrlYcomma - creating html element with class name
