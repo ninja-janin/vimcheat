@@ -1,4 +1,6 @@
-# Vimcheat
+# Vimcheat by Ninja-Janin
+
+## ACCIDENTALLY PRESSED
 
 if ctrl z pressed, press fg Enter to go back to vim.
 
@@ -40,13 +42,18 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * esc        -place to normal mode
 * :vsp       -vertical split
 * :sp        -split
-* 
-* SAVING:
-* w          -save
-* wq         -quit and save
-* wq!         -quit and disregard changes
+
+
+## SAVING:
+
+* w                - save
+* wq               - quit and save
+* wq!              - quit and disregard changes
+* :saveas filename - save as
+ 	note: wrap "" if filename contain spaces 
 
 ## DELETING
+
 * d          -delete
 * dd         -deleting the entire row
 * d$         -deleting from cursor at the end of the line
@@ -73,6 +80,7 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * ctrlv                                                                            - highlighting by line downwards (use the navigation key to navigate)
 
 ## SEARCHING
+
 * \p                                                   - searching files
 * m                                                    - Add, edit, Delete,Copy files
 * :sort                                                - sorting
@@ -105,9 +113,10 @@ if ctrl z pressed, press fg Enter to go back to vim.
 
 ## EDITING & DELETING
 
-* ci" or ()       ----- copy inside closing characters like ", () , [], {}
-* vi" or ()       ----- visual inside closing characters like ", () , [], {}
-* di" or ()       -----  delete inside closing characters like ", () , [], {}
+* ci" or ()    - copy inside closing characters like ", () , [], {}
+* vi" or ()    - visual inside closing characters like ", () , [], {}
+* di" or ()    - delete inside closing characters like ", () , [], {}
+* ctrlv shifti - multiple inputs vertically
 
 ## NERD
 
@@ -143,19 +152,21 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * ex:
 * <html>sample tag</html>
 * tag.className*5 ctrly,                   - multiple tags
-* ctrl//                                   - to comment
+* highlight then gc                        - to comment
 * tag.nameOfTheClass then press ctrlYcomma - creating html element with class name
 * :set tw=999                              - removing vertical limitation
 * vat                                      - highlighting divs
 
 ## MANIPULATING FILES
+
 * :new filename.txt
 * m   - adding,deleting,copying
-* :saveas 
 * 
-* GIT COMMANDS:
+
+## GIT COMMANDS:
+
 * diff         - viewing changes.
-* -- .         -remove all changes
+* -- .         - remove all changes
 
 ## FEATURES
 
