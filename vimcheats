@@ -32,16 +32,12 @@ G      - jump to the end of the file
 10<PageUp> 10<CTRL-B>     -move 10 pages up
 10<PageDown> 5<CTRL-F>    -move 5 pages down
 
-
-
-
 a          -type appended text
 g+t        -change active tab
 tabnew     -new tab
 esc        -place to normal mode
 :vsp       -vertical split
 :sp        -split
-
 
 SAVING:
 w          -save
@@ -107,7 +103,6 @@ EDITING & DELETING:
 ci" or ()       ----- copy inside closing characters like ", () , [], {}
 vi" or ()       ----- visual inside closing characters like ", () , [], {}
 di" or ()       -----  delete inside closing characters like ", () , [], {}
-
 
 NERD:--------------------------------------------------------------
 \n				  - open & close sidebar
