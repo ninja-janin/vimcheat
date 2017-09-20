@@ -44,11 +44,13 @@ if ctrl z pressed, press fg Enter to go back to vim.
 
 ## SAVING:
 
-* `w                - save`
-* `wq               - quit and save`
-* `wq!              - quit and disregard changes`
-* `:saveas filename - save as`
- 	note: wrap "" if filename contain spaces 
+* `w					- save`
+* `wq					- quit and save`
+* `wq!					- quit and disregard changes`
+* `:saveas filename		- saving as`
+ 	`note: wrap filename with "" if it contain space/s` 
+	`or` 
+  `:saveas % then press tab to get the present file directory` 
 
 ## DELETING
 
@@ -69,12 +71,13 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * `ga ctrl x + character                                                            - custom aligning // disregard + sign`
 * `v                                                                                - highlight`
 * `i                                                                                - insert text`
-* `shift+>                                                                          - tab`
+* `shift >                                                                          - tab`
 * `u                                                                                - undo`
 * `ctrl r                                                                           - redo`
 * `higlight the word then press control n until all words are selected then press s - edit same word in one time`
 * `:Tab /word                                                                       - tabularize(after typing :Tab /word press enter`
-* `ctrlv                                                                            - highlighting by line downwards (use the navigation key to navigate)`
+* `ctrl v                                                                           - highlighting by line downwards (use the navigation key to navigate)`
+* `r                                                                            	- replace existing character`
 
 ## SEARCHING
 
@@ -134,6 +137,7 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * `ctrl+w then no. of spaces then shift < or > - widening nerd`
 * `i                                           - open file in split window horizontally`
 * `s                                           - open file in split window vertically`
+* `R                                           - refreshing nerd directory`
 
 ## WINDOW ADJUSTMENT
 
