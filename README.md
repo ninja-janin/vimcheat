@@ -116,7 +116,7 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * `ci" or ()    - copy inside closing characters like ", () , [], {}`
 * `vi" or ()    - visual inside closing characters like ", () , [], {}`
 * `di" or ()    - delete inside closing characters like ", () , [], {}`
-* `ctrlv shifti - multiple inputs vertically`
+* `ctrlv 		- multiple inputs vertically`
 
 ## NERD
 
