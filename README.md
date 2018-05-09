@@ -48,9 +48,9 @@ if ctrl z pressed, press fg Enter to go back to vim.
 * `wq					- quit and save`
 * `wq!					- quit and disregard changes`
 * `:saveas filename		- saving as`
- 	`note: wrap filename with "" if it contain space/s` 
-	`or` 
-  `:saveas % then press tab to get the present file directory` 
+ 	`note: wrap filename with "" if it contain space/s`
+	`or`
+  `:saveas % then press tab to get the present file directory`
 
 ## DELETING
 
@@ -121,6 +121,7 @@ if ctrl z pressed, press fg Enter to go back to vim.
 ## NERD
 
 * `\n                                          - open & close sidebar`
+* `I                                           - show hidden file in nerdtree`
 * `\p                                          - search file`
 * `/nameOfFile                                 - search word`
 * `ctrl h or l                                 - move from edit field to dir`
